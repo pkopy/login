@@ -52,6 +52,9 @@ public class UserController {
 
         model.addAttribute("userService", userService);
 
+        if(bindingResult.hasErrors()){
+            return "pustao tutaj jak nie wiem co...";
+        }
 
         return userService.createRegisterKey();
 
