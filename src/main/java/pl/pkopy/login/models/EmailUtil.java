@@ -43,8 +43,8 @@ public class EmailUtil {
     }
     public static void sendEmailAuth(UserForm userForm, String registerKey){
 
-        String fromEmail = "test@pkopy.pl";
-        String password = "pkopy7603!@#";
+        String fromEmail = "";
+        String password = "";
 
         String smtpHostServer = "s51.linuxpl.com";
         String emailID = userForm.getEmail();
